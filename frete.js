@@ -8,8 +8,8 @@
   console.log("🚚 Frete CriarInfo - Script carregado com sucesso");
 
   // === CONFIGURAÇÕES ===
-  const API_URL = "https://SEU_DOMINIO.com/api/frete.php"; // 🔧 Substitua pela URL real
-  const CEP_LOJA = "61700-000"; // 🔧 Pode ser configurado pelo lojista
+  const API_URL = "https://frete.jadex.com.br/api/frete.php";
+  const CEP_LOJA = window.CRIARINFO_CEP_LOJA || "61700-000";
 
   // Função para obter CEP do checkout
   function obterCEP() {
@@ -122,3 +122,4 @@
     }, 2000);
   });
 })();
+
